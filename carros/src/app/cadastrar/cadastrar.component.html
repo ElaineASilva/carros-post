@@ -1,0 +1,24 @@
+<h1>Cadastro de carro</h1>
+<div>
+  <span class="p-input-icon-left">
+    <i class="pi pi-angle-right"></i>
+    <input
+      type="text" pInputText
+      placeholder="Insira o modelo do carro" [(ngModel)]="name"
+    >
+  </span>
+</div>
+
+<div>
+  <span class="p-input-icon-left">
+    <i class="pi pi-angle-right"></i>
+    <input
+      type="text" pInputText
+      placeholder="Insira o ano do carro" [(ngModel)]="ano"
+    >
+  </span>
+</div>
+
+<p-button label="Salvar" (click)="cadastrar()"></p-button>
+
+<p-toast></p-toast>

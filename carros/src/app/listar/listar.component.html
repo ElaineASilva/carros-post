@@ -1,0 +1,15 @@
+<h1>Carros cadastrados</h1>
+<p-table [value]="carros" styleClass="p-datatable-gridlines" responsiveLayout="scroll">
+  <ng-template pTemplate="header">
+      <tr>
+          <th>Modelo</th>
+          <th>Ano</th>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-carro>
+      <tr>
+          <td>{{carro.name}}</td>
+          <td>{{carro.ano}}</td>
+      </tr>
+  </ng-template>
+</p-table>
